@@ -90,7 +90,7 @@ namespace GaaScoreboard
             if (scoreTeam1 > scoreTeam2)
             {
                 scoredifference = (scoreTeam1)-(scoreTeam2);
-                endgame.Text = team1.Text + "wins by " + scoredifference + "points";
+                endgame.Text = team1.Text + " wins by " + scoredifference + "points";
             }
 
             else if (scoreTeam1 < scoreTeam2)
