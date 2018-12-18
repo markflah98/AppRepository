@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GaaScoreboard"
+             x:Class="GaaScoreboard.MainPage"
+             BackgroundColor="RoyalBlue"> 
+    <ScrollView>
+        <StackLayout>
+            <Image x:Name="imageCroke" 
+               Margin="10, 5, 10, 10"
+               HorizontalOptions="Center"  
+               VerticalOptions="Center"
+               WidthRequest="600"
+               HeightRequest="390"
+               Aspect="AspectFit"/>
+            
+            <Label Text="Welcome to the GAA Scoreboard App!" HorizontalOptions="Center" TextColor="White" x:Name="lblMessage" VerticalOptions="Center"/>
+        
+            <!--Venue & Team Entries-->
+            <Label Text="Please enter the name of the Competition" 
+               HorizontalOptions="Center" 
+               x:Name="lblComp" 
+               VerticalOptions="Center" 
+               TextColor="White"/>
+
+            <Entry HorizontalOptions="Center" 
+               x:Name="entryCompetition" 
+               Placeholder="Enter Your Competition Here" 
+               HorizontalTextAlignment="Center"/>
+
+            <Label Text="Please enter the Venue" 
+               HorizontalOptions="Center" 
+               x:Name="lblVenue" 
+               VerticalOptions="Center" 
+               TextColor="White"/>
+
+            <Entry HorizontalOptions="Center" 
+               x:Name="entryVenue" 
+               Placeholder="Enter The Venue Here" 
+               HorizontalTextAlignment="Center"/>
+
+            <Label Text="Please enter the name of the Home Team" 
+               HorizontalOptions="Center" 
+               x:Name="lblHome" 
+               VerticalOptions="Center" 
+               TextColor="White"/>
+        
+        <Entry HorizontalOptions="Center" 
+               x:Name="entryHomeTeam" 
+               Placeholder="Enter Your Home Team Here" 
+               HorizontalTextAlignment="Center"/>
+        
+        <Label Text="Please enter the name of the Away Team" 
+               HorizontalOptions="Center" 
+               x:Name="lblAway" 
+               VerticalOptions="Center" 
+               TextColor="White"/>
+        
+        <Entry HorizontalOptions="Center" 
+               x:Name="entryAwayTeam"
+               Placeholder="Enter Your Away Team Here" 
+               HorizontalTextAlignment="Center"/>
+        
+        <Button Text="Click to save" 
+                x:Name="btnChangeLabel" 
+                Clicked="btnChangeLabel_Clicked" 
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" 
+                BackgroundColor="White" 
+                BorderColor="Black"/>
+
+        <Label Text="Team Names not entered" x:Name="homeVsAway" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"/>
+
+
+
+            <!--Team 1 score input & output-->
+            <Label Text="Team 1" 
+                   x:Name="team1" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" 
+                   FontSize="Large" 
+                   TextColor="White"/>
+        
+            <Button Text="Goal" 
+                    x:Name="goalteam1" 
+                    Clicked="goalteam1_Clicked" 
+                    VerticalOptions="StartAndExpand" 
+                    HorizontalOptions="Center" 
+                    BackgroundColor="DarkGreen" 
+                    TextColor="White"/> 
+            
+            <Label Text="0-0(0)" x:Name="team1score"
+                   XAlign="Center"
+                   FontSize="Large"
+                   TextColor="White"/>
+        
+            <Button Text="Point"
+                    x:Name="pointteam1" 
+                    Clicked="pointteam1_Clicked" 
+                    VerticalOptions="StartAndExpand" 
+                    HorizontalOptions="Center" 
+                    BackgroundColor="White" 
+                    TextColor="DarkGreen"/>
+
+            <Label Text="VS" x:Name="against" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" TextColor="White"/>
+           
+            <!--Team 2 score input & output-->
+            <Button Text="Goal" 
+                    x:Name="goalteam2" 
+                    Clicked="goalteam2_Clicked" 
+                    VerticalOptions="StartAndExpand" 
+                    HorizontalOptions="Center" 
+                    BackgroundColor="DarkGreen" 
+                    TextColor="White"/>
+            
+            <Label Text="0-0(0)" x:Name="team2score"
+                   XAlign="Center"
+                   FontSize="Large"
+                   TextColor="White"/>
+            
+            <Button Text="Point" 
+                    x:Name="pointteam2" 
+                    Clicked="pointteam2_Clicked" 
+                    VerticalOptions="StartAndExpand" 
+                    HorizontalOptions="Center" 
+                    BackgroundColor="White" 
+                    TextColor="DarkGreen"/>
+           
+            <Label Text="Team 2" 
+                   x:Name="team2" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" 
+                   FontSize="Large" 
+                   TextColor="White"/>
+            
+            <!--Final Score-->
+            <Button Text="End Game" 
+                    x:Name="endgame" 
+                    Clicked="endgame_Clicked" 
+                    VerticalOptions="StartAndExpand" 
+                    HorizontalOptions="Center" 
+                    BackgroundColor="White" 
+                    TextColor="Black" 
+                    BorderColor="Black"/>
+          
+        </StackLayout>
+    </ScrollView>
+
+
+
+
+</ContentPage>
